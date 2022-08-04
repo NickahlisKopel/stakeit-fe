@@ -1,38 +1,35 @@
 import React from "react";
 import Container from "../common/Container";
 import Form from "../common/Form";
-import InLineContainer from "../common/InlineInputContainer";
+import InLineContainer from "../common/InlineInputContainer"
 import Input from "../common/Input";
 import Button from "../common/Button";
-
-
-const LoginForm = (props) => {
-
+const PostForm = (props) => {
+    
     const handleChange = (e) => {
-       props.updateForm(e.target.id, e.target.value)
-    }
+        props.updateForm(e.target.name, e.target.value)
+     }
 
     return(
         <Container>
             <Form onSubmit={props.onSubmit}>
                 <InLineContainer>
-                    <Input name="username" 
-                    id="username" 
-                    placeholder="Username" 
-                    value={props.query.username} 
+                    <Input name="title" 
+                    id="title" 
+                    placeholder="Title" 
+                    value={props.query.title} 
                     onChange={handleChange} 
                     required>
                     </Input>
                 </InLineContainer>
                 <InLineContainer>
                     <Input
-                        name="password"
-                        id="password"
-                        placeholder="Password"
-                        value ={props.query.password}
+                        name="body"
+                        id="body"
+                        placeholder="Body"
+                        value ={props.query.body}
                         onChange={handleChange} 
                         required
-                        type="password"
                         >
                     </Input>
                 </InLineContainer>
@@ -42,4 +39,4 @@ const LoginForm = (props) => {
     )
 }
 
-export default LoginForm;
+export default PostForm;

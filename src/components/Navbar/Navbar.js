@@ -39,8 +39,9 @@ const Navbar = (props) => {
           <NavButton to="/" label="Home"/>
           {auth.id ? (
             <Fragment>
-              <NavButton to="/posts" label="Posts"/>
               <NavButton to="/profile" label="Profile"/>
+              <NavButton to="/createPost" label="Create Post"/>
+              <NavButton to="/createComment" label="Create Comment"/>
             </Fragment>
           ) : (
             <NavButton to="/login" label="Login"/>

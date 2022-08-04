@@ -6,8 +6,10 @@ const Post = (props) => {
     return(
         <BorderCardAdv>
             <p>{props.post.profile.name}</p>
-            <h1>{props.post.title}</h1>
+            <p>{props.post.profile.karma}</p>
+            <h4>{props.post.title}</h4>
             <p>{props.post.body}</p>
+
         </BorderCardAdv>
             
         
