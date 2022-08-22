@@ -8,6 +8,8 @@ import Self from "../User/Self";
 import CreatePost from "../Post/CreatePost";
 import SignUp from "../User/SignUp";
 import CreateComment from "../Post/CreateComment";
+import Update from "../User/Update";
+
 const AppRouter = () => {
     return(
         <Container>
@@ -19,6 +21,7 @@ const AppRouter = () => {
                 <Route path="/createPost" element={<CreatePost/>}/>
                 <Route path="/signUp" element={<SignUp/>}/>
                 <Route path="/createComment" element={<CreateComment/>}/>
+                <Route path="/update" element={<Update/>}/>
             </Routes>
         </Container>
     )

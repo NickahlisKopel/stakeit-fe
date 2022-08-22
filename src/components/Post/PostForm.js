@@ -4,6 +4,7 @@ import Form from "../common/Form";
 import InLineContainer from "../common/InlineInputContainer"
 import Input from "../common/Input";
 import Button from "../common/Button";
+import TextArea from "../common/TextArea";
 const PostForm = (props) => {
     
     const handleChange = (e) => {

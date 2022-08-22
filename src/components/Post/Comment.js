@@ -3,15 +3,13 @@ import BorderCard from "../common/BorderCard";
 import Container from "../common/Container";
 import BorderCardAdv from "../common/BorderCardAdv";
 import HorizontalLine from "../common/HorizontalLine";
-const Post = (props) => {
+const Comment = (props) => {
     return(
         <Container>
             <HorizontalLine></HorizontalLine>
-            <p>Post ID: {props.post.id}</p>
-            <p>Profile: {props.post.profile.name}</p>
-            <p>Karma: {props.post.profile.karma}</p>
-            <h4>{props.post.title}</h4>
-            <p>{props.post.body}</p>
+            <p>Profile: {props.comment.profile.name}</p>
+            <p>Karma: {props.comment.profile.karma}</p>
+            <p>{props.comment.body}</p>
             <HorizontalLine></HorizontalLine>
         </Container>
         
@@ -20,4 +18,4 @@ const Post = (props) => {
     )
 }
 
-export default Post;
+export default Comment;

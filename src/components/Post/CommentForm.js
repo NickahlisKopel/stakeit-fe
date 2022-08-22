@@ -4,6 +4,7 @@ import InLineContainer from "../common/InlineInputContainer";
 import Form from "../common/Form";
 import Input from "../common/Input";
 import Button from "../common/Button";
+import TextArea from "../common/TextArea";
 const CommentForm = (props) => {
     
     const handleChange = (e) => {
@@ -24,7 +25,7 @@ const CommentForm = (props) => {
                     </Input>
                 </InLineContainer>
                 <InLineContainer>
-                    <Input 
+                    <Input
                     name="body"
                     id="body"
                     placeholder="Comment"

@@ -39,7 +39,12 @@ const Self = () => {
         navigate("/")
         window.location.reload(false);
     }
-    
+
+    const update = async () => {
+        navigate("/update")
+
+    }
+     
 
     return(
         <Container>
@@ -48,6 +53,7 @@ const Self = () => {
             <p>Job Title: {profile.jobTitle}</p>
             <p>Karma: {profile.karma}</p>
             <Button onClick={logout}>Logout</Button>
+            <Button onClick={update}>Update Profile</Button>
             <Button onClick={deleteUser} style={{color:"red"}}>Delete Profile</Button>
         </Container>
         
